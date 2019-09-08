@@ -1,0 +1,219 @@
+{
+  "TransactionId": "1567157303",
+  "Branches": [
+    {
+      "LocationId": "473",
+      "Name": "PLACEMAKERS WESTGATE",
+      "TradingAs": "PLACEMAKERS WESTGATE",
+      "IsDepot": "No",
+      "OpenHours": [
+        {
+          "Period": "Mon-Fri",
+          "Open": "07:00",
+          "Close": "17:30"
+        },
+        {
+          "Period": "Saturday",
+          "Open": "08:00",
+          "Close": "17:00"
+        },
+        {
+          "Period": "Sunday",
+          "Open": "09:00",
+          "Close": "17:00"
+        }
+      ],
+      "Region": {
+        "Name": "AKL",
+        "Description": "Auckland"
+      },
+      "PostalAddress": {
+        "Address1": "DON BUCK DRIVE",
+        "Address2": "P O BOX 21 358",
+        "Address3": "HENDERSON",
+        "Address4": "AUCKLAND",
+        "Address5": "",
+        "Suburb": "",
+        "City": "",
+        "Longitude": "",
+        "Latitude": ""
+      },
+      "PhysicalAddress": {
+        "Address1": "547 - 557 DON BUCK RD",
+        "Address2": "P O BOX 84 286",
+        "Address3": "",
+        "Address4": "",
+        "Address5": "",
+        "Suburb": "",
+        "City": "WESTGATE",
+        "Longitude": "174.607649",
+        "Latitude": "-36.82396"
+      },
+      "Contact": {
+        "Name": "",
+        "Email": "",
+        "Phone": "(09)815-6800",
+        "Fax": "(09)815-6819"
+      }
+    },
+    {
+      "LocationId": "512",
+      "Name": "PLACEMAKERS HELENSVILLE",
+      "TradingAs": "PLACEMAKERS WESTGATE",
+      "IsDepot": "Yes",
+      "OpenHours": [
+        {
+          "Period": "Mon-Fri",
+          "Open": "07:00",
+          "Close": "17:00"
+        },
+        {
+          "Period": "Saturday",
+          "Open": "08:00",
+          "Close": "12:00"
+        }
+      ],
+      "Region": {
+        "Name": "AKL",
+        "Description": "Auckland"
+      },
+      "PostalAddress": {
+        "Address1": "DON BUCK DRIVE",
+        "Address2": "P O BOX 21 358",
+        "Address3": "HENDERSON",
+        "Address4": "AUCKLAND",
+        "Address5": "",
+        "Suburb": "",
+        "City": "",
+        "Longitude": "",
+        "Latitude": ""
+      },
+      "PhysicalAddress": {
+        "Address1": "75 Mill Road- Helensville",
+        "Address2": "P O BOX 84 286",
+        "Address3": "",
+        "Address4": "",
+        "Address5": "",
+        "Suburb": "",
+        "City": "WESTGATE",
+        "Longitude": "174.44272",
+        "Latitude": "-36.677762"
+      },
+      "Contact": {
+        "Name": "",
+        "Email": "",
+        "Phone": "(09)420 9150",
+        "Fax": "(09)420 9151"
+      }
+    },
+    {
+      "LocationId": "362",
+      "Name": "PLACEMAKERS THAMES",
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD",
+      "IsDepot": "No",
+      "OpenHours": [
+        {
+          "Period": "Mon-Fri",
+          "Open": "07:00",
+          "Close": "17:00"
+        },
+        {
+          "Period": "Saturday",
+          "Open": "08:00",
+          "Close": "12:30"
+        }
+      ],
+      "Region": {
+        "Name": "BOP",
+        "Description": "Waikato and BOP"
+      },
+      "PostalAddress": {
+        "Address1": "620 QUEEN ST",
+        "Address2": "P O BOX 510",
+        "Address3": "THAMES",
+        "Address4": "",
+        "Address5": "",
+        "Suburb": "",
+        "City": "",
+        "Longitude": "",
+        "Latitude": ""
+      },
+      "PhysicalAddress": {
+        "Address1": "73 KOPU RD",
+        "Address2": "P O BOX 510",
+        "Address3": "",
+        "Address4": "",
+        "Address5": "",
+        "Suburb": "",
+        "City": "THAMES",
+        "Longitude": "175.566355",
+        "Latitude": "-37.18755"
+      },
+      "Contact": {
+        "Name": "",
+        "Email": "accounts.thames@placemakers.co.nz",
+        "Phone": "(07)868-0130",
+        "Fax": "(07)868-6256"
+      }
+    },
+    {
+      "LocationId": "485",
+      "Name": "PLACEMAKERS MT WELLINGTON",
+      "TradingAs": "PLACEMAKERS MT WELLINGTON\r\n",
+      "IsDepot": "No",
+      "OpenHours": [
+        {
+          "Period": "Mon-Fri\r\n",
+          "Open": "07:00",
+          "Close": "17:30"
+        },
+        {
+          "Period": "Saturday",
+          "Open": "08:00",
+          "Close": "17:00"
+        },
+        {
+          "Period": "Sunday",
+          "Open": "09:00",
+          "Close": "17:00"
+        }
+      ],
+      "Region": {
+        "Name": "AKL",
+        "Description": "Auckland"
+      },
+      "PostalAddress": {
+        "Address1": "80 LUNN AVE",
+        "Address2": "P O BOX 18 449",
+        "Address3": "Glen Innes",
+        "Address4": "AUCKLAND",
+        "Address5": "",
+        "Suburb": "",
+        "City": "",
+        "Longitude": "",
+        "Latitude": ""
+      },
+      "PhysicalAddress": {
+        "Address1": "102 LUNN AVE\r\n",
+        "Address2": "P O BOX 18 449",
+        "Address3": "",
+        "Address4": "",
+        "Address5": "",
+        "Suburb": "",
+        "City": "MT WELLINGTON",
+        "Longitude": "",
+        "Latitude": ""
+      },
+      "Contact": {
+        "Name": "",
+        "Email": "kevin.hooper@placemakers.co.nz",
+        "Phone": "(09)5708300",
+        "Fax": "(09)5271097"
+      }
+    }
+  ],
+  "ServiceResult": {
+    "Code": 0,
+    "Message": ""
+  }
+}

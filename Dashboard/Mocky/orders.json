@@ -1,0 +1,632 @@
+[
+  {
+    "Warnings": [
+      "OnHold"
+    ],
+    "DeliveryOrderId": "1234568-9",
+    "BranchId": 362,
+    "CustomerId": "SOLLY SAN",
+    "CustomerPromise": "Same Day",
+    "DeliveryAddress": "16 Chelmsford Court",
+    "DeliveryStatus": "Planned",
+    "RequestDate": "2018-10-11T10:00:00+13:00",
+    "PickupDateTime": "2018-10-11T00:00:00+13:00",
+    "DeliveryDateTime": "2018-10-12T00:00:00+13:00",
+    "TruckNumber": "KQG143",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Delv",
+    "PickStatus": "Being Picked",
+    "PickStatusCompleteDateTime": "2018-10-12T10:58:00+13:00",
+    "OMUAppPacked": true,
+    "Weight": 505.3,
+    "Pickers": [
+      "Ina Nariko",
+      "Katoaka Suki"
+    ],
+    "PackageNotes": [
+      {
+        "Packaging": "20 x Box",
+        "StagingArea": "Mount Wellington",
+        "Packer": "Packer 1"
+      },
+      {
+        "Packaging": "15 x Pallet",
+        "StagingArea": "Mount Eden",
+        "Packer": "Packer 2"
+      }
+    ],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [
+      "StockOnHand",
+      "Substitution",
+      "Parked"
+    ],
+    "DeliveryOrderId": "1331953-1",
+    "BranchId": 362,
+    "CustomerId": "FARTB",
+    "CustomerPromise": "",
+    "DeliveryAddress": "Private Bag 9004",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-03-21T00:00:00+12:00",
+    "PickupDateTime": "2018-03-21T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Cust",
+    "PickStatus": "Part Picked",
+    "PickStatusCompleteDateTime": null,
+    "OMUAppPacked": false,
+    "Weight": 0,
+    "Pickers": [
+      "JSMITH",
+      "DFHJ",
+      "SG_DEV",
+      "KKTESER"
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [],
+    "DeliveryOrderId": "1332185-1",
+    "BranchId": 362,
+    "CustomerId": "JACRB",
+    "CustomerPromise": "",
+    "DeliveryAddress": "236 Paku Drive",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-04-06T00:00:00+12:00",
+    "PickupDateTime": "2018-04-06T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Cust",
+    "PickStatus": "Complete",
+    "PickStatusCompleteDateTime": "2018-05-07T21:09:00+12:00",
+    "OMUAppPacked": false,
+    "Weight": 200,
+    "Pickers": [
+      "ADTEST",
+      "ADI",
+      "ADI1"
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [
+      "ETA"
+    ],
+    "DeliveryOrderId": "1332391-1",
+    "BranchId": 362,
+    "CustomerId": "ADARA",
+    "CustomerPromise": "",
+    "DeliveryAddress": "4 Puriri Avenue",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-04-24T00:00:00+12:00",
+    "PickupDateTime": "2018-04-24T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Delivery",
+    "SourceId": "Delv",
+    "PickStatus": "Part Picked",
+    "PickStatusCompleteDateTime": null,
+    "OMUAppPacked": false,
+    "Weight": 18.72,
+    "Pickers": [
+      "SG"
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [
+      "StockOnHand",
+      "Parked"
+    ],
+    "DeliveryOrderId": "1332589-1",
+    "BranchId": 362,
+    "CustomerId": "FABLA",
+    "CustomerPromise": "",
+    "DeliveryAddress": "115 Totara Close",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-05-07T00:00:00+12:00",
+    "PickupDateTime": "2018-05-07T00:00:00+12:00",
+    "DeliveryDateTime": "2018-05-07T00:00:00+12:00",
+    "TruckNumber": "",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Spor",
+    "PickStatus": "Part Picked",
+    "PickStatusCompleteDateTime": null,
+    "OMUAppPacked": false,
+    "Weight": 1263.6,
+    "Pickers": [
+      ""
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [
+      "Parked"
+    ],
+    "DeliveryOrderId": "1332624-1",
+    "BranchId": 362,
+    "CustomerId": "ADARA",
+    "CustomerPromise": "",
+    "DeliveryAddress": "4 Puriri Avenue",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-05-09T00:00:00+12:00",
+    "PickupDateTime": "2018-05-09T00:00:00+12:00",
+    "DeliveryDateTime": "2018-05-10T00:00:00+12:00",
+    "TruckNumber": "",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Spor",
+    "PickStatus": "Part Picked",
+    "PickStatusCompleteDateTime": null,
+    "OMUAppPacked": false,
+    "Weight": 0,
+    "Pickers": [
+      "SREEDHR"
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [],
+    "DeliveryOrderId": "1332641-1",
+    "BranchId": 473,
+    "CustomerId": "LLBYTTA",
+    "CustomerPromise": "",
+    "DeliveryAddress": "39 Hornsea Road",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-05-09T00:00:00+12:00",
+    "PickupDateTime": "2018-05-09T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Delivery",
+    "SourceId": "Delv",
+    "PickStatus": "Complete",
+    "PickStatusCompleteDateTime": "2018-05-09T12:01:00+12:00",
+    "OMUAppPacked": false,
+    "Weight": 39.78,
+    "Pickers": [
+      "SREEDHR"
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 473,
+      "Name": "WESTGATE",
+      "IsDepot": false,
+      "TradingAs": "PLACEMAKERS WESTGATE"
+    }
+  },
+  {
+    "Warnings": [
+      "Parked",
+      "ETA"
+    ],
+    "DeliveryOrderId": "1332652-1",
+    "BranchId": 362,
+    "CustomerId": "A1HOT",
+    "CustomerPromise": "",
+    "DeliveryAddress": "PO BOX 1098",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-05-10T00:00:00+12:00",
+    "PickupDateTime": "2018-05-10T00:00:00+12:00",
+    "DeliveryDateTime": "2018-05-10T00:00:00+12:00",
+    "TruckNumber": "",
+    "FulfilmentType": "Delivery",
+    "SourceId": "Delv",
+    "PickStatus": "Part Picked",
+    "PickStatusCompleteDateTime": null,
+    "OMUAppPacked": false,
+    "Weight": 21.06,
+    "Pickers": [
+      ""
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [
+      "StockOnHand",
+      "Parked"
+    ],
+    "DeliveryOrderId": "1332658-1",
+    "BranchId": 362,
+    "CustomerId": "X1113355",
+    "CustomerPromise": "",
+    "DeliveryAddress": "810",
+    "DeliveryStatus": "Missed Delivery",
+    "RequestDate": "2019-10-11T10:00:00+13:00",
+    "PickupDateTime": "2018-05-12T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Spor",
+    "PickStatus": "Part Picked",
+    "PickStatusCompleteDateTime": null,
+    "OMUAppPacked": false,
+    "Weight": 832,
+    "Pickers": [
+      ""
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [
+      "StockOnHand"
+    ],
+    "DeliveryOrderId": "1332665-1",
+    "BranchId": 362,
+    "CustomerId": "A1COR",
+    "CustomerPromise": "",
+    "DeliveryAddress": "334 Port Road",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-05-13T00:00:00+12:00",
+    "PickupDateTime": "2018-05-13T00:00:00+12:00",
+    "DeliveryDateTime": "2018-05-11T00:00:00+12:00",
+    "TruckNumber": "",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Cust",
+    "PickStatus": "Collected",
+    "PickStatusCompleteDateTime": "2018-05-11T14:58:00+12:00",
+    "OMUAppPacked": false,
+    "Weight": 118.22,
+    "Pickers": [
+      ""
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [
+      "ETA"
+    ],
+    "DeliveryOrderId": "1332918-1",
+    "BranchId": 362,
+    "CustomerId": "BARCA",
+    "CustomerPromise": "",
+    "DeliveryAddress": "PO BOX 543",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-06-18T00:00:00+12:00",
+    "PickupDateTime": "2018-06-18T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Delivery",
+    "SourceId": "Delv",
+    "PickStatus": "Packed",
+    "PickStatusCompleteDateTime": "2018-06-12T18:00:00+12:00",
+    "OMUAppPacked": true,
+    "Weight": 95,
+    "Pickers": [
+      "DEAN"
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [
+      "ETA"
+    ],
+    "DeliveryOrderId": "1332919-1",
+    "BranchId": 362,
+    "CustomerId": "FALCA",
+    "CustomerPromise": "",
+    "DeliveryAddress": "2 Pohutukawa Drive",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-06-18T00:00:00+12:00",
+    "PickupDateTime": "2018-06-18T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Delivery",
+    "SourceId": "Delv",
+    "PickStatus": "Pick Complete",
+    "PickStatusCompleteDateTime": "2018-06-13T12:44:00+12:00",
+    "OMUAppPacked": false,
+    "Weight": 0,
+    "Pickers": [
+      "DEAN"
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [],
+    "DeliveryOrderId": "1332928-1",
+    "BranchId": 362,
+    "CustomerId": "WALMA",
+    "CustomerPromise": "",
+    "DeliveryAddress": "18 Te Puru Creek Road",
+    "DeliveryStatus": "On Route",
+    "RequestDate": "2018-06-18T00:00:00+12:00",
+    "PickupDateTime": "2018-06-18T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Cust",
+    "PickStatus": "Pick Complete",
+    "PickStatusCompleteDateTime": "2018-06-13T12:52:00+12:00",
+    "OMUAppPacked": false,
+    "Weight": 1,
+    "Pickers": [
+      "DEAN"
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [
+      "Parked"
+    ],
+    "DeliveryOrderId": "1332929-1",
+    "BranchId": 362,
+    "CustomerId": "REDDA",
+    "CustomerPromise": "",
+    "DeliveryAddress": "227 Reservoir Road",
+    "DeliveryStatus": "Scheduled",
+    "RequestDate": "2019-10-11T10:00:00+13:00",
+    "PickupDateTime": "2018-06-19T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Cust",
+    "PickStatus": "Part Picked",
+    "PickStatusCompleteDateTime": null,
+    "OMUAppPacked": false,
+    "Weight": 0,
+    "Pickers": [
+      "DEAN",
+      "SG_TEST"
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [],
+    "DeliveryOrderId": "1332938-1",
+    "BranchId": 362,
+    "CustomerId": "FARTB",
+    "CustomerPromise": "",
+    "DeliveryAddress": "Private Bag 9004",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-06-16T00:00:00+12:00",
+    "PickupDateTime": "2018-06-16T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Cust",
+    "PickStatus": "Packed",
+    "PickStatusCompleteDateTime": "2018-06-15T13:50:00+12:00",
+    "OMUAppPacked": true,
+    "Weight": 72,
+    "Pickers": [
+      "DEAN"
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [],
+    "DeliveryOrderId": "1333003-1",
+    "BranchId": 362,
+    "CustomerId": "FARTB",
+    "CustomerPromise": "",
+    "DeliveryAddress": "Private Bag 9004 test",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-06-23T00:00:00+12:00",
+    "PickupDateTime": "2018-06-23T00:00:00+12:00",
+    "DeliveryDateTime": "2018-06-22T00:00:00+12:00",
+    "TruckNumber": "",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Cust",
+    "PickStatus": "Collected",
+    "PickStatusCompleteDateTime": "2018-06-22T15:36:00+12:00",
+    "OMUAppPacked": false,
+    "Weight": 0,
+    "Pickers": [
+      ""
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [],
+    "DeliveryOrderId": "1333004-1",
+    "BranchId": 362,
+    "CustomerId": "FARTB",
+    "CustomerPromise": "",
+    "DeliveryAddress": "Private Bag 9004",
+    "DeliveryStatus": "",
+    "RequestDate": "2019-10-11T10:00:00+13:00",
+    "PickupDateTime": "2018-06-26T00:00:00+12:00",
+    "DeliveryDateTime": "2018-06-25T00:00:00+12:00",
+    "TruckNumber": "",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Cust",
+    "PickStatus": "Collected",
+    "PickStatusCompleteDateTime": "2018-06-25T10:22:00+12:00",
+    "OMUAppPacked": false,
+    "Weight": 118.07,
+    "Pickers": [
+      ""
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [
+      "Parked",
+      "ETA"
+    ],
+    "DeliveryOrderId": "1333028-1",
+    "BranchId": 362,
+    "CustomerId": "FARTB",
+    "CustomerPromise": "",
+    "DeliveryAddress": "Private Bag 9004",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-07-06T00:00:00+12:00",
+    "PickupDateTime": "2018-07-06T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Delivery",
+    "SourceId": "Delv",
+    "PickStatus": "Part Picked",
+    "PickStatusCompleteDateTime": null,
+    "OMUAppPacked": false,
+    "Weight": 206.3,
+    "Pickers": [
+      ""
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [],
+    "DeliveryOrderId": "15432641-1",
+    "BranchId": 362,
+    "CustomerId": "LLBYTTA",
+    "CustomerPromise": "",
+    "DeliveryAddress": "39 Hornsea Road",
+    "DeliveryStatus": "",
+    "RequestDate": "2018-05-09T00:00:00+12:00",
+    "PickupDateTime": "2018-05-09T00:00:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Delivery",
+    "SourceId": "Delv",
+    "PickStatus": "Complete",
+    "PickStatusCompleteDateTime": "2018-05-09T12:01:00+12:00",
+    "OMUAppPacked": false,
+    "Weight": 39.78,
+    "Pickers": [
+      "SREEDHR"
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  },
+  {
+    "Warnings": [
+      "ETA"
+    ],
+    "DeliveryOrderId": "1632634-1",
+    "BranchId": 362,
+    "CustomerId": "SREE210",
+    "CustomerPromise": "",
+    "DeliveryAddress": "100 Lake Road",
+    "DeliveryStatus": "Dispatched",
+    "RequestDate": "2018-05-25T00:00:00+12:00",
+    "PickupDateTime": "2018-04-08T08:11:00+12:00",
+    "DeliveryDateTime": null,
+    "TruckNumber": "",
+    "FulfilmentType": "Delivery",
+    "SourceId": "Delv",
+    "PickStatus": "Pick Complete",
+    "PickStatusCompleteDateTime": null,
+    "OMUAppPacked": false,
+    "Weight": 5,
+    "Pickers": [
+      ""
+    ],
+    "PackageNotes": [],
+    "Location": {
+      "LocationId": 362,
+      "Name": "THAMES",
+      "IsDepot": false,
+      "TradingAs": "MCGILL BUILDING SUPPLIES LTD"
+    }
+  }
+]
