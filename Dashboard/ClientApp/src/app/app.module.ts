@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
+import { RssFeedsService, SampleDataService } from './dashboard-api';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
@@ -32,7 +33,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
       { path: 'rss-feed', component: RssFeedComponent }
     ])
   ],
-  providers: [],
+  providers: [RssFeedsService, SampleDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

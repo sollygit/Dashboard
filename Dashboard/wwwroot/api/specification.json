@@ -1,0 +1,539 @@
+﻿{
+  "x-generator": "NSwag v13.0.6.0 (NJsonSchema v10.0.23.0 (Newtonsoft.Json v12.0.0.0))",
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Dashboard API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/RssFeeds/GetAll": {
+      "get": {
+        "tags": [
+          "RssFeeds"
+        ],
+        "operationId": "RssFeeds_GetAll",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Feed"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/SampleData/WeatherForecasts": {
+      "get": {
+        "tags": [
+          "SampleData"
+        ],
+        "operationId": "SampleData_WeatherForecasts",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/omdb/100/DeliveryOrder": {
+      "post": {
+        "tags": [
+          "DeliveryOrder"
+        ],
+        "operationId": "DeliveryOrder_Upsert",
+        "requestBody": {
+          "x-name": "request",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeliveryOrderRequest"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DeliveryOrder"
+        ],
+        "operationId": "DeliveryOrder_CleanUp",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Source": {
+      "get": {
+        "tags": [
+          "Source"
+        ],
+        "operationId": "Source_GetAll",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics": {
+      "get": {
+        "tags": [
+          "Statistics"
+        ],
+        "operationId": "Statistics_Get",
+        "parameters": [
+          {
+            "name": "lastUpdate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time",
+              "nullable": true
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/statistics/national": {
+      "get": {
+        "tags": [
+          "Statistics"
+        ],
+        "operationId": "Statistics_National",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/User/locations": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_GetLocations",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/User/viewstatistics": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "operationId": "User_CanViewStatistics",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Feed": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "link": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "feedType": {
+            "type": "string",
+            "nullable": true
+          },
+          "author": {
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "pubDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "publishDate": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dateFormatted": {
+            "type": "string",
+            "nullable": true
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "DeliveryOrderRequest": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "transactionId": {
+            "type": "string",
+            "nullable": true
+          },
+          "deliveryOrder": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/DeliveryOrder"
+              }
+            ]
+          }
+        }
+      },
+      "DeliveryOrder": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "deliveryOrderId": {
+            "type": "string",
+            "nullable": true
+          },
+          "transCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "branchId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "location": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Location"
+              }
+            ]
+          },
+          "customerId": {
+            "type": "string",
+            "nullable": true
+          },
+          "requestDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "pickupDateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deliveryDateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fulfilmentType": {
+            "type": "string",
+            "nullable": true
+          },
+          "sourceId": {
+            "type": "string",
+            "nullable": true
+          },
+          "holdReleaseFlag": {
+            "type": "boolean"
+          },
+          "customerPromise": {
+            "type": "string",
+            "nullable": true
+          },
+          "pickStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "pickStatusCompleteDateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "omuAppPacked": {
+            "type": "boolean"
+          },
+          "pickArea": {
+            "type": "string",
+            "nullable": true
+          },
+          "weight": {
+            "type": "number",
+            "format": "decimal"
+          },
+          "spareField": {
+            "type": "string",
+            "nullable": true
+          },
+          "pickers": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Picker"
+            }
+          },
+          "packageNotes": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/PackageNote"
+            }
+          },
+          "lines": {
+            "type": "array",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/Line"
+            }
+          },
+          "deliveryAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "deliveryStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "truckNumber": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "Location": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "locationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "isDepot": {
+            "type": "boolean"
+          },
+          "tradingAs": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "Picker": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "pickerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "deliveryOrder": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/DeliveryOrder"
+              }
+            ]
+          }
+        }
+      },
+      "PackageNote": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "packaging": {
+            "type": "string",
+            "nullable": true
+          },
+          "stagingArea": {
+            "type": "string",
+            "nullable": true
+          },
+          "packer": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "Line": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "lineId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lineNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sku": {
+            "type": "string",
+            "nullable": true
+          },
+          "specialOrder": {
+            "type": "boolean"
+          },
+          "substitution": {
+            "type": "boolean"
+          },
+          "backOrder": {
+            "type": "boolean"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "weight": {
+            "type": "number",
+            "format": "decimal"
+          },
+          "quantity": {
+            "type": "number",
+            "format": "decimal"
+          },
+          "stockOnHand": {
+            "type": "number",
+            "format": "decimal"
+          },
+          "quantityPicked": {
+            "type": "number",
+            "format": "decimal"
+          },
+          "picker": {
+            "type": "string",
+            "nullable": true
+          },
+          "deliveryOrder": {
+            "nullable": true,
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/DeliveryOrder"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

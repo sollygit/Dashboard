@@ -21,6 +21,9 @@ namespace Dashboard
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            // Register the Swagger services
+            services.AddSwaggerDocument();
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -45,6 +48,12 @@ namespace Dashboard
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
+
+            app.UseSwaggerUi3(settings =>
+            {
+                settings.Path = "/api";
+                settings.DocumentPath = "/api/specification.json";
+            });
 
             app.UseMvc(routes =>
             {

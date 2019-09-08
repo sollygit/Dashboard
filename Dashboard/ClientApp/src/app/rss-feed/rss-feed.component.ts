@@ -1,5 +1,5 @@
-import { Component, Inject, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+import { RssFeedsService, Feed } from '../dashboard-api';
 
 @Component({
   selector: 'app-rss-deed',
@@ -8,21 +8,12 @@ import { HttpClient } from '@angular/common/http';
 export class RssFeedComponent implements OnInit {
   latestPosts: Feed[] = [];
 
-  constructor(private http: HttpClient, @Inject('BASE_URL') private baseUrl: string) { }
+  constructor(private service: RssFeedsService) { }
 
   ngOnInit() {
-    this.http.get<Feed[]>(this.baseUrl + 'api/RssFeeds/GetAll').subscribe(result => {
+    this.service.getAll().subscribe(result => {
       this.latestPosts = result;
     }, error => console.error(error));
   }
-}
-
-interface Feed {  
-  link: string;  
-  title: string;  
-  feedType: string;  
-  author: string;  
-  content: string;  
-  publishDate: string;  
 }
 
