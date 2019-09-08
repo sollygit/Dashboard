@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard", "Dashboard\Dashboard.csproj", "{E85E9B2A-ED2C-4A40-8E30-D4EC531DC417}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard", "Dashboard\Dashboard.csproj", "{E85E9B2A-ED2C-4A40-8E30-D4EC531DC417}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard.Models", "Dashboard.Models\Dashboard.Models.csproj", "{D9A2D192-7C12-4FB1-8A90-ADAA9AE387EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E85E9B2A-ED2C-4A40-8E30-D4EC531DC417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E85E9B2A-ED2C-4A40-8E30-D4EC531DC417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E85E9B2A-ED2C-4A40-8E30-D4EC531DC417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A2D192-7C12-4FB1-8A90-ADAA9AE387EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A2D192-7C12-4FB1-8A90-ADAA9AE387EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A2D192-7C12-4FB1-8A90-ADAA9AE387EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A2D192-7C12-4FB1-8A90-ADAA9AE387EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
