@@ -1,0 +1,35 @@
+<h1>RSS feed</h1>
+
+<p>This component demonstrates fetching external RSS feed.</p>
+
+<p *ngIf="!latestPosts"><em>Loading...</em></p>
+
+<div>
+  <div class="card" style="margin-left:50px; margin-right:50px; margin-bottom:50px;">
+    <div class="card-header" style="font-weight:bold; font-size:large;">
+      Latest Posts from RSS Feeds
+    </div>
+    <div class="card-body">
+      <div class="table-responsive" style="max-height:385px;">
+        <table class="table mb-0" *ngIf="latestPosts && latestPosts.length > 0">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Type</th>
+              <th>Published</th>
+              <th>Author</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let post of latestPosts; let i = index">
+              <td style="text-align:left;"><a href="{{post.link}}" target="_blank">{{post.title}}</a></td>
+              <td>{{ post.feedType }}</td>
+              <td nowrap>{{ post.publishDate }}</td>
+              <td nowrap>{{ post.author}} </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
