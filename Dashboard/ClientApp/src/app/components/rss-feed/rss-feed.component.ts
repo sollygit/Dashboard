@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RssFeedsService, Feed } from '../dashboard-api';
+import { RssFeedsService, Feed } from 'src/app/dashboard-api';
 
 @Component({
   selector: 'app-rss-deed',

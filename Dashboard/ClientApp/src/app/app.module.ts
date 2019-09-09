@@ -5,12 +5,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { RssFeedsService, SampleDataService } from './dashboard-api';
+import { ClockService } from './services/clock.service';
+import { ConfigurationService } from './services/configuration.service';
+import { MomentPipe } from './pipes/moment.pipe';
+
 import { AppComponent } from './app.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { RssFeedComponent } from './rss-feed/rss-feed.component';
-import { HomeComponent } from './home/home.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { CounterComponent } from './components/counter/counter.component';
+import { FetchDataComponent } from './components/fetch-data/fetch-data.component';
+import { RssFeedComponent } from './components/rss-feed/rss-feed.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { ClockComponent } from './components/clock/clock.component';
 
 
 @NgModule({
@@ -20,7 +25,9 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    RssFeedComponent
+    RssFeedComponent,
+    ClockComponent,
+    MomentPipe
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -33,7 +40,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
       { path: 'rss-feed', component: RssFeedComponent }
     ])
   ],
-  providers: [RssFeedsService, SampleDataService],
+  providers: [ConfigurationService, RssFeedsService, SampleDataService, ClockService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

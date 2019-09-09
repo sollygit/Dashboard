@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SampleDataService, WeatherForecast } from '../dashboard-api';
+import { SampleDataService, WeatherForecast } from 'src/app/dashboard-api';
 
 @Component({
   selector: 'app-fetch-data',
