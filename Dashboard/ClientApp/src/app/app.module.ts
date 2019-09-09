@@ -8,6 +8,9 @@ import { RssFeedsService, SampleDataService } from './dashboard-api';
 import { ClockService } from './services/clock.service';
 import { ConfigurationService } from './services/configuration.service';
 import { MomentPipe } from './pipes/moment.pipe';
+import { SpacerPipe } from './pipes/spacer.pipe';
+import { BooleanPipe } from './pipes/boolean.pipe';
+import { BreakLinePipe } from './pipes/break-line.pipe';
 
 import { AppComponent } from './app.component';
 import { CounterComponent } from './components/counter/counter.component';
@@ -27,7 +30,7 @@ import { ClockComponent } from './components/clock/clock.component';
     FetchDataComponent,
     RssFeedComponent,
     ClockComponent,
-    MomentPipe
+    MomentPipe, SpacerPipe, BooleanPipe, BreakLinePipe
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
