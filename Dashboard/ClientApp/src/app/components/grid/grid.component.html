@@ -1,0 +1,64 @@
+<div class="row m-0">
+  <div class="col-sm p-0">
+    <div class="scroll-table" [class.scroll-table-extended]="extended" [style.height]="maxHeight + 'px'">
+      <div #tableHeader>
+        <table class="table table-sm header">
+          <thead class="thead-light">
+            <tr>
+              <th>&nbsp;</th>
+              <th class="scroll-table-col-sm" (click)="changeSort('branchId')">Branch</th>
+              <th (click)="changeSort('deliveryOrderId')">Order #</th>
+              <th (click)="changeSort('customerId')">Customer</th>
+              <th (click)="changeSort('customerPromise')" *ngIf="extended">Time</th>
+              <th (click)="changeSort('requestDate')">Date</th>
+              <th class="scroll-table-col-sm" (click)="changeSort('fulfilmentType')">Type</th>
+              <th class="scroll-table-col-sm" (click)="changeSort('specialOrder')">Special</th>
+              <th (click)="changeSort('pickStatus')">Status</th>
+              <th class="scroll-table-col-lg">Picker</th>
+              <th class="scroll-table-col-lg">Packaging</th>
+              <th class="scroll-table-col-lg">Staging</th>
+              <ng-container *ngIf="extended">
+                <th class="scroll-table-col-lg" (click)="changeSort('deliveryAddress')">Delivery Address</th>
+                <th (click)="changeSort('truckNumber')">Truck #</th>
+                <th (click)="changeSort('deliveryDateTime')">Delivery Time</th>
+              </ng-container>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <p *ngIf="!items">
+        Loading data...
+      </p>
+      <div class="scroll-table-body" [style.height]="bodyHeight + 'px'" scrollTop *ngIf="items">
+        <table class="table table-sm body">
+          <tbody class="smaller-text">
+            <tr *ngFor="let row of items">
+              <td>
+                <img *ngFor="let warning of row.warnings" [src]="'assets/warnings/' + warning + '.png'" alt="{{warning}}" class="warning-img" />
+              </td>
+              <td class="scroll-table-col-sm">{{row.branchId}}</td>
+              <td nowrap>{{row.deliveryOrderId}}</td>
+              <td>{{row.customerId}}</td>
+              <td *ngIf="extended">
+                <ng-container *ngIf="hasSpecificTime(row); else promise">{{row.requestDate | moment:'h:mma' | lowercase}}</ng-container>
+                <ng-template #promise>{{row.customerPromise}}</ng-template>
+              </td>
+              <td nowrap>{{row.requestDate | moment:'D-MMM'}}</td>
+              <td class="scroll-table-col-sm">{{row.fulfilmentType | spacer}}</td>
+              <td class="scroll-table-col-sm">{{row.specialOrder | boolean}}</td>
+              <td [ngClass]="statusColour(row.pickStatus)">{{row.pickStatus}}</td>
+              <td class="scroll-table-col-lg" nowrap [innerHtml]="row.pickers | breakLine"></td>
+              <td class="scroll-table-col-lg" nowrap [innerHtml]="row.packaging | breakLine"></td>
+              <td class="scroll-table-col-lg" nowrap [innerHtml]="row.stagingAreas | breakLine"></td>
+              <ng-container *ngIf="extended">
+                <td class="scroll-table-col-lg">{{row.deliveryAddress}}</td>
+                <td>{{row.truckNumber}}</td>
+                <td>{{row.deliveryDateTime | moment:'h:mma' | lowercase}}</td>
+              </ng-container>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

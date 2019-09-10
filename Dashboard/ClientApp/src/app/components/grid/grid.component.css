@@ -1,0 +1,81 @@
+.scroll-table {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-table table {
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.scroll-table-body {
+}
+
+.scroll-table td:last-child {
+    width: 150px;
+}
+
+.scroll-table th:last-child {
+    width: 167px;
+}
+
+.scroll-table-extended th.scroll-table-col-sm, .scroll-table-extended td.scroll-table-col-sm {
+    width: 60px;
+}
+
+.scroll-table-extended th.scroll-table-col-lg, .scroll-table-extended td.scroll-table-col-lg {
+    width: 120px;
+}
+
+.scroll-table-extended td:last-child.scroll-table-col-lg {
+    width: 120px;
+}
+
+.scroll-table-extended th:last-child.scroll-table-col-lg {
+    width: 137px;
+}
+
+.scroll-table-extended td:last-child {
+    width: 80px;
+}
+
+.scroll-table-extended th:last-child {
+    width: 97px;
+}
+
+.scroll-table table tr:first-child td {
+    border-top: none;
+}
+
+.warning-img {
+    height: 1.2rem;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.smaller-text {
+    font-size: 0.8rem;
+}
+
+.status-being-picked {
+    color: #ffc107;
+}
+
+.status-part-picked {
+    color: #dc3545;
+}
+
+.status-pick-complete {
+    color: #7a2125;
+}
+
+.status-packed {
+    color: #28a745;
+}
+
+.hideColumn {
+    display: none;
+}
