@@ -15,7 +15,10 @@ namespace Dashboard.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<DeliveryOrder>()
-              .HasKey(x => new { x.DeliveryOrderId, x.TransCode, x.BranchId });
+                .Property(p => p.Weight)
+                .HasColumnType("decimal(18,2)");
+            modelBuilder.Entity<DeliveryOrder>()
+                .HasKey(x => new { x.DeliveryOrderId, x.TransCode, x.BranchId });
             modelBuilder.Entity<Location>()
                 .HasKey(x => x.LocationId);
             modelBuilder.Entity<Location>()
@@ -25,17 +28,29 @@ namespace Dashboard.Models
                 .HasMany(x => x.DeliveryOrders)
                 .WithOne(x => x.Location);
             modelBuilder.Entity<Line>()
-              .HasOne(l => l.DeliveryOrder)
-              .WithMany(x => x.Lines)
-              .OnDelete(DeleteBehavior.Cascade);
+                .HasOne(l => l.DeliveryOrder)
+                .WithMany(x => x.Lines)
+                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<Line>()
+                .Property(p => p.Weight)
+                .HasColumnType("decimal(18,2)");
+            modelBuilder.Entity<Line>()
+                .Property(p => p.Quantity)
+                .HasColumnType("decimal(18,2)");
+            modelBuilder.Entity<Line>()
+                .Property(p => p.QuantityPicked)
+                .HasColumnType("decimal(18,2)");
+            modelBuilder.Entity<Line>()
+                .Property(p => p.StockOnHand)
+                .HasColumnType("decimal(18,2)");
             modelBuilder.Entity<PackageNote>()
-              .HasOne(l => l.DeliveryOrder)
-              .WithMany(x => x.PackageNotes)
-              .OnDelete(DeleteBehavior.Cascade);
+                .HasOne(l => l.DeliveryOrder)
+                .WithMany(x => x.PackageNotes)
+                .OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<Picker>()
-              .HasOne(l => l.DeliveryOrder)
-              .WithMany(x => x.Pickers)
-              .OnDelete(DeleteBehavior.Cascade);
+                .HasOne(l => l.DeliveryOrder)
+                .WithMany(x => x.Pickers)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
