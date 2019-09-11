@@ -131,7 +131,6 @@ namespace Dashboard
 
                 if (env.IsDevelopment())
                 {
-                    spa.Options.StartupTimeout = TimeSpan.FromSeconds(60); // Increase the timeout if angular app is taking longer to startup
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
