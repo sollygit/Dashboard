@@ -2,6 +2,9 @@
   <nav class='navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3'>
     <div class="container">
       <a class="navbar-brand" [routerLink]='["/"]'>Dashboard</a>
+      <a ngPreserveWhitespaces class="navbar-brand" href="/api" target="_blank">
+        <img src="assets/swagger-logo.svg" class="logo" alt="swagger" />
+      </a>
       <a class="navbar-light"><clock></clock></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-label="Toggle navigation"
               [attr.aria-expanded]="isExpanded" (click)="toggle()">
