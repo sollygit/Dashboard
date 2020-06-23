@@ -1,0 +1,111 @@
+{
+  "TransactionId": "0fef02f5-578d-4a34-b6e0-b296135c1994",
+  "DeliveryOrder": {
+    "Warnings": [
+      "OnHold"
+    ],
+    "DeliveryOrderId": "1234578-8",
+    "TransCode": "OR",
+    "BranchId": 362,
+    "CustomerId": "JAMES SHOW",
+    "RequestDate": "2019-10-15T10:00:00.0000000+13:00",
+    "PickupDateTime": "2019-12-10T00:00:00.0000000+13:00",
+    "DeliveryDateTime": "2019-10-12T10:00:00.0000000+13:00",
+    "FulfilmentType": "Pickup",
+    "SourceId": "Standard",
+    "HoldReleaseFlag": true,
+    "CustomerPromise": "Same Day",
+    "PickStatus": "Packed",
+    "PickStatusCompleteDateTime": "2019-10-12T10:58:00.0000000+13:00",
+    "OMUAppPacked": true,
+    "PickArea": "DT-YD-SR",
+    "Weight": 205.5,
+    "Pickers": [
+      "Aka Suku",
+      "Akemi Nu"
+    ],
+    "PackageNotes": [
+      {
+        "Packaging": "10 x Box",
+        "StagingArea": "Mount Smart",
+        "Packer": "Massey"
+      },
+      {
+        "Packaging": "12 x Pallet",
+        "StagingArea": "Greenlane Road",
+        "Packer": "Bob"
+      }
+    ],
+    "SpareField": "Standard Delivery",
+    "DeliveryAddress": "12 Eva Street",
+    "DeliveryStatus": "Planned",
+    "TruckNumber": "BQG146",
+    "Lines": [
+      {
+        "LineNumber": 1,
+        "Sku": "2801711",
+        "SpecialOrder": false,
+        "Substitution": false,
+        "BackOrder": false,
+        "Description": "GIB BRACE NOISELINE 2400X1200 10MM WALLBOARD",
+        "Weight": 101.36,
+        "Quantity": 4,
+        "StockOnHand": 17,
+        "QuantityPicked": 4,
+        "Picker": ""
+      },
+      {
+        "LineNumber": 2,
+        "Sku": "2800027",
+        "SpecialOrder": false,
+        "Substitution": false,
+        "BackOrder": false,
+        "Description": "GIB STANDARD 2400X1200 10MM WALLBOARD",
+        "Weight": 74.88,
+        "Quantity": 4,
+        "StockOnHand": 71,
+        "QuantityPicked": 4,
+        "Picker": ""
+      },
+      {
+        "LineNumber": 3,
+        "Sku": "2800373",
+        "SpecialOrder": false,
+        "Substitution": false,
+        "BackOrder": false,
+        "Description": "GIB STANDARD 4200X1200 10MM WALLBOARD",
+        "Weight": 98.28,
+        "Quantity": 2,
+        "StockOnHand": 17,
+        "QuantityPicked": 5,
+        "Picker": ""
+      },
+      {
+        "LineNumber": 4,
+        "Sku": "2260025",
+        "SpecialOrder": false,
+        "Substitution": false,
+        "BackOrder": false,
+        "Description": "WINSTONE GIB/PLSTR PALLET 3.9 - 6.0 X 1.2M",
+        "Weight": 220,
+        "Quantity": 1,
+        "StockOnHand": 7,
+        "QuantityPicked": 1,
+        "Picker": ""
+      },
+      {
+        "LineNumber": 5,
+        "Sku": "2800175",
+        "SpecialOrder": false,
+        "Substitution": false,
+        "BackOrder": false,
+        "Description": "GIB 3000MM P01 90 DEGREE SLIM ANGLE MOULDING",
+        "Weight": 0.7,
+        "Quantity": 2,
+        "StockOnHand": 22,
+        "QuantityPicked": 2,
+        "Picker": "Brodie"
+      }
+    ]
+  }
+}
